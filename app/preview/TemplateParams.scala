@@ -4017,6 +4017,7 @@ object TemplateParams3 {
     "overseas_transfer_charge_confirm_transfer_submitted" -> Map(
       "qtReference" -> "QT123456",
       "memberName" -> "Trixie Mattel",
+      "submitter" -> "Joe Bloggs",
       "submissionDate" -> "3 October 2025 at 3:00pm",
       "pensionSchemeName" -> "Smith Harper Pension Scheme"
     )
