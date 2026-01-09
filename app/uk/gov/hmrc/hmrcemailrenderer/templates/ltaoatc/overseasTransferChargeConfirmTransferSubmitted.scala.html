@@ -17,11 +17,12 @@
 @(params: Map[String, Any])
 @uk.gov.hmrc.hmrcemailrenderer.templates.helpers.html.template_main(params,
     "Qualifying Recognised Overseas Pension Scheme (QROPS) transfer report submitted") {
+    <p style="margin: 0 0 30px; font-size: 19px;">Dear customer,</p>
     <p style="margin: 0 0 30px; font-size: 19px;">A QROPS transfer report has been submitted for your pension scheme.</p>
-    <p style="margin: 0 0 30px; font-size: 19px;">For more information on when transfers are taxed, go to GOV.UK and search ‘overseas pension transfers’.</p>
     <h2 id="transfer-details" style="margin: 0 0 30px; font-size: 24px;">Transfer details</h2>
     <p style="margin: 0 0 30px; font-size: 19px;">QROPS transfer reference: @{params("qtReference")}</p>
     <p style="margin: 0 0 30px; font-size: 19px;">Member name: @{params("memberName")}</p>
+    <p style="margin: 0 0 30px; font-size: 19px;">Submitted by: @{params("submitter")}</p>
     <p style="margin: 0 0 30px; font-size: 19px;">Date submitted: @{params("submissionDate")}</p>
     <p style="margin: 0 0 30px; font-size: 19px;">Pension scheme name: @{params("pensionSchemeName")}</p>
     <h2 id="why-you-got-this-email" style="margin: 0 0 30px; font-size: 24px;">Why you are receiving this email</h2>

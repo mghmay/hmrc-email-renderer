@@ -2,18 +2,26 @@
 
 @uk.gov.hmrc.hmrcemailrenderer.templates.helpers.txt.salutation(params)
 
-You have a new message from HMRC about Self Assessment.
+Dear customer,
 
-To view it, sign in to your HMRC online account.
+A QROPS transfer report has been submitted for your pension scheme.
 
-For security reasons, we have not included a link with this email.
+Transfer details
 
-Why you got this email
+QROPS transfer reference: @{params("qtReference")}
 
-You chose to get paperless notifications instead of letters by post.
+Member name: @{params("memberName")}
 
-This means we send you an email to let you know you have a new message in your account.
+Submitted by: @{params("submitter")}
 
-From HMRC Self Assessment
+Date submitted: @{params("submissionDate")}
+
+Pension scheme name: @{params("pensionSchemeName")}
+
+Why you are receiving this email
+
+We send email confirmation when a report of a transfer to a qualifying recognised overseas pension scheme (QROPS) is submitted on the Managing Pension Schemes service.
+
+From HMRC Report a transfer to a QROPS
 
 @{uk.gov.hmrc.hmrcemailrenderer.templates.helpers.txt.template_footer()}
